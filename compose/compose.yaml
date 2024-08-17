@@ -52,7 +52,7 @@ services:
   ## If you wish to use MySQL, comment out the mysql db image below
   ## uncomment this block.
   db:
-    image: mysql:8.0.28
+    image: mysql:8.0.39
     command:
       --max_allowed_packet=128M
     ports:
