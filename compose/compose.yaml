@@ -38,7 +38,7 @@ services:
   ## If you wish to use MariaDB, comment out the mariadb db image below
   ## uncomment this block.
   #db:
-  #  image: mariadb:latest
+  #  image: mariadb:10.6
   #  command:
   #    --max_allowed_packet=64M
   #    --optimizer_use_condition_selectivity=1
@@ -52,7 +52,7 @@ services:
   ## If you wish to use MySQL, comment out the mysql db image below
   ## uncomment this block.
   db:
-    image: mysql:latest
+    image: mysql:8.0.28
     command:
       --max_allowed_packet=128M
     ports:
