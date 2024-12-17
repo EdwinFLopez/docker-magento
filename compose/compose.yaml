@@ -55,6 +55,11 @@ services:
     image: mysql:8.0.39
     command:
       --max_allowed_packet=128M
+      ## Enabling log-bin for debezium connect mysql-source configuration
+      #--log-bin=mysql-bin
+      #--binlog-format=row
+      #--binlog-row-image=full
+      #--binlog-expire-logs-seconds=864000
     ports:
       - "3306:3306"
     env_file: env/db.env

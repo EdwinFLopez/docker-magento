@@ -5,10 +5,11 @@ if [ -d "./bin" ]; then
   exit 1
 fi
 
-git init -qqq
-git remote add origin https://github.com/edwinflopez/docker-magento
-git fetch origin -qqq
-git checkout origin/master -- compose
+#git init -qqq
+#git remote add origin https://github.com/edwinflopez/docker-magento
+#git fetch origin -qqq
+#git checkout origin/master -- compose
+curl -LJO https://github.com/edwinflopez/docker-magento/compose
 
 mv compose/* ./
 mv compose/.gitignore ./
