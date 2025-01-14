@@ -13,7 +13,7 @@ git checkout origin/master -- compose
 
 # Remove created git config, we don't care about it once it is setup.
 mv compose/* ./
-rm -rf compose/.vscode
+mv compose/.vscode ./
 rm -rf compose/.gitignore
 rm -rf ./compose
 rm -rf ./.git
